@@ -1,0 +1,2241 @@
+Starting ChromeDriver 116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382}) on port 9515
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1697006047.530][INFO]: [d432ccc1e9898ccafc0c57710e8cc021] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "binary": "/opt/google/chrome/google-chrome"
+         }
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1697006047.531][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1697006047.532][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1697006047.532][INFO]: Launching chrome: /opt/google/chrome/google-chrome --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging=stderr --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/tmp/.org.chromium.Chromium.uwX6i4 data:,
+[15069:15069:1011/120407.650144:WARNING:chrome_main_delegate.cc(596)] This is Chrome version 116.0.5845.179 (not a warning)
+/snap/core20/current/lib/x86_64-linux-gnu/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by /lib/x86_64-linux-gnu/libproxy.so.1)
+Failed to load module: /home/knoldus/snap/code/common/.cache/gio-modules/libgiolibproxy.so
+[15069:15069:1011/120408.095237:INFO:chrome_browser_cloud_management_controller.cc(168)] Starting CBCM Controller Initialization
+[15069:15069:1011/120408.095359:INFO:chrome_browser_cloud_management_controller.cc(196)] No machine level policy manager exists.
+
+DevTools listening on ws://127.0.0.1:36417/devtools/browser/c9d673b1-e655-4ff5-9dd6-f45955861799
+[1697006048.185][DEBUG]: DevTools HTTP Request: http://localhost:36417/json/version
+[15069:15069:1011/120408.459841:WARNING:bluez_dbus_manager.cc(247)] Floss manager not present, cannot set Floss enable/disable.
+[1697006048.480][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Chrome/116.0.5845.179",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
+   "V8-Version": "11.6.189.20",
+   "WebKit-Version": "537.36 (@17ff023f3eb4f6883321db9399bfc65560ef84a9)",
+   "webSocketDebuggerUrl": "ws://localhost:36417/devtools/browser/c9d673b1-e655-4ff5-9dd6-f45955861799"
+}
+
+[1697006048.480][DEBUG]: DevTools HTTP Request: http://localhost:36417/json/list
+[1697006048.529][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:36417/devtools/page/D6CFFF463B73D02F119218C1BC35C39A",
+   "id": "D6CFFF463B73D02F119218C1BC35C39A",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:36417/devtools/page/D6CFFF463B73D02F119218C1BC35C39A"
+} ]
+
+[1697006048.531][INFO]: resolved localhost to ["127.0.0.1"]
+[1697006048.540][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1697006048.545][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "D0E527572CD5FD07D0196EDB75DC961E",
+      "canAccessOpener": false,
+      "targetId": "D6CFFF463B73D02F119218C1BC35C39A",
+      "title": "",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1697006048.545][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "D6CFFF463B73D02F119218C1BC35C39A"
+}
+[1697006048.551][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "DEDCE58088543D2B86B2615A2764EEE6",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "D0E527572CD5FD07D0196EDB75DC961E",
+      "canAccessOpener": false,
+      "targetId": "D6CFFF463B73D02F119218C1BC35C39A",
+      "title": "",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1697006048.551][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "DEDCE58088543D2B86B2615A2764EEE6"
+}
+[1697006048.551][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=3) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1697006048.552][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=4) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1697006048.552][DEBUG]: DevTools WebSocket Command: Log.enable (id=5) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.552][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=6) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1697006048.553][DEBUG]: DevTools WebSocket Command: Page.enable (id=7) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.553][DEBUG]: DevTools WebSocket Command: Page.enable (id=8) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[15132:15132:1011/120408.569276:WARNING:sandbox_linux.cc(393)] InitializeSandbox() called with multiple threads in process gpu-process.
+[1697006048.660][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=3) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "identifier": "1"
+}
+[1697006048.660][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=4) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1697006048.660][DEBUG]: DevTools WebSocket Response: Log.enable (id=5) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.660][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=6) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.660][DEBUG]: DevTools WebSocket Response: Page.enable (id=7) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.660][DEBUG]: DevTools WebSocket Response: Page.enable (id=8) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.660][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.663][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "timestamp": 4935.465922
+}
+[1697006048.675][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "D6CFFF463B73D02F119218C1BC35C39A"
+}
+[1697006048.675][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "timestamp": 4935.466491
+}
+[1697006048.675][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.675][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "context": {
+      "auxData": {
+         "frameId": "D6CFFF463B73D02F119218C1BC35C39A",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "-5513228659808837566.6460264869671853674"
+   }
+}
+[1697006048.676][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.676][DEBUG]: DevTools WebSocket Command: Page.enable (id=10) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.677][DEBUG]: DevTools WebSocket Response: Page.enable (id=10) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.677][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=11) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.682][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=11) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.683][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=12) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.685][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=12) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "",
+         "gatedAPIFeatures": [  ],
+         "id": "D6CFFF463B73D02F119218C1BC35C39A",
+         "loaderId": "1A641F53E264AA822212D2ED4453CB3C",
+         "mimeType": "text/plain",
+         "secureContextType": "InsecureScheme",
+         "securityOrigin": "://",
+         "url": "data:,"
+      }
+   }
+}
+[1697006048.685][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=13) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.687][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=13) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "",
+         "gatedAPIFeatures": [  ],
+         "id": "D6CFFF463B73D02F119218C1BC35C39A",
+         "loaderId": "1A641F53E264AA822212D2ED4453CB3C",
+         "mimeType": "text/plain",
+         "secureContextType": "InsecureScheme",
+         "securityOrigin": "://",
+         "url": "data:,"
+      }
+   }
+}
+[1697006048.689][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=14) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "10122db3-96dd-4fc0-a777-b31c9101ce08",
+   "uniqueContextId": "-5513228659808837566.6460264869671853674"
+}
+[1697006048.712][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=14) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "4543286998864127077.1.1",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":1}"
+         } ]
+      }
+   }
+}
+[1697006048.712][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=15) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "objectGroup": "10122db3-96dd-4fc0-a777-b31c9101ce08"
+}
+[1697006048.713][INFO]: [d432ccc1e9898ccafc0c57710e8cc021] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "116.0.5845.179",
+      "chrome": {
+         "chromedriverVersion": "116.0.5845.96 (1a391816688002153ef791ffe60d9e899a71a037-refs/branch-heads/5845@{#1382})",
+         "userDataDir": "/tmp/.org.chromium.Chromium.uwX6i4"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:36417"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "linux",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "d432ccc1e9898ccafc0c57710e8cc021"
+}
+[1697006048.723][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=15) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006048.760][INFO]: [d432ccc1e9898ccafc0c57710e8cc021] COMMAND Navigate {
+   "url": "https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+}
+[1697006048.761][INFO]: Waiting for pending navigations...
+[1697006048.761][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "expression": "1"
+}
+[1697006048.763][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1697006048.763][INFO]: Done waiting for pending navigations. Status: ok
+[1697006048.763][DEBUG]: DevTools WebSocket Command: Page.navigate (id=17) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "url": "https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+}
+[1697006049.167][DEBUG]: DevTools WebSocket Response: Page.navigate (id=17) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "D6CFFF463B73D02F119218C1BC35C39A",
+   "loaderId": "C8224DFEEE8BD4690FE63E61462D8514"
+}
+[1697006049.167][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "expression": "document.URL"
+}
+[1697006049.171][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006049.173][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "D6CFFF463B73D02F119218C1BC35C39A"
+}
+[1697006049.220][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006049.220][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "myntra.com",
+      "gatedAPIFeatures": [  ],
+      "id": "D6CFFF463B73D02F119218C1BC35C39A",
+      "loaderId": "C8224DFEEE8BD4690FE63E61462D8514",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.myntra.com",
+      "url": "https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+   },
+   "type": "Navigation"
+}
+[1697006049.220][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "context": {
+      "auxData": {
+         "frameId": "D6CFFF463B73D02F119218C1BC35C39A",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.myntra.com",
+      "uniqueId": "-8307512393320069435.9119319602714930142"
+   }
+}
+[1697006049.226][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "type": "string",
+      "value": "https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+   }
+}
+[1697006049.226][INFO]: Waiting for pending navigations...
+[1697006049.226][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "expression": "1"
+}
+[1697006049.235][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1697006049.540][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006049.541][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "expression": "1"
+}
+[1697006049.585][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1697006050.092][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "expression": "1"
+}
+[1697006050.172][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1697006050.658][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "A2F2DFB60D040917C8D73831E8C2B57B",
+   "parentFrameId": "D6CFFF463B73D02F119218C1BC35C39A",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 445759,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      }, {
+         "columnNumber": 445976,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      }, {
+         "columnNumber": 446433,
+         "functionName": "qe",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      }, {
+         "columnNumber": 447589,
+         "functionName": "We",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      }, {
+         "columnNumber": 449638,
+         "functionName": "e.setupOnce",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      }, {
+         "columnNumber": 422212,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      }, {
+         "columnNumber": 422283,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      }, {
+         "columnNumber": 422141,
+         "functionName": "Z",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      }, {
+         "columnNumber": 423674,
+         "functionName": "e.setupIntegrations",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      }, {
+         "columnNumber": 414148,
+         "functionName": "e.bindClient",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      }, {
+         "columnNumber": 463282,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      }, {
+         "columnNumber": 463296,
+         "functionName": "yt",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      }, {
+         "columnNumber": 37238,
+         "functionName": "2voO",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      }, {
+         "columnNumber": 17632,
+         "functionName": "f",
+         "lineNumber": 200,
+         "scriptId": "23",
+         "url": "https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+      }, {
+         "columnNumber": 8108,
+         "functionName": "0",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      }, {
+         "columnNumber": 17632,
+         "functionName": "f",
+         "lineNumber": 200,
+         "scriptId": "23",
+         "url": "https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+      }, {
+         "columnNumber": 17491,
+         "functionName": "r",
+         "lineNumber": 200,
+         "scriptId": "23",
+         "url": "https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+      }, {
+         "columnNumber": 17354,
+         "functionName": "a",
+         "lineNumber": 200,
+         "scriptId": "23",
+         "url": "https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+      }, {
+         "columnNumber": 46,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      } ]
+   }
+}
+[1697006050.659][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "expression": "1"
+}
+[1697006050.660][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "A2F2DFB60D040917C8D73831E8C2B57B"
+}
+[1697006050.668][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "A2F2DFB60D040917C8D73831E8C2B57B",
+      "loaderId": "263AF84724E8646CE1B29F7FFD5A3C16",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "D6CFFF463B73D02F119218C1BC35C39A",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1697006050.668][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "context": {
+      "auxData": {
+         "frameId": "A2F2DFB60D040917C8D73831E8C2B57B",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://www.myntra.com",
+      "uniqueId": "6495338994150067312.4169965349765608409"
+   }
+}
+[1697006050.668][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "A2F2DFB60D040917C8D73831E8C2B57B"
+}
+[1697006050.995][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "A2F2DFB60D040917C8D73831E8C2B57B",
+   "reason": "remove"
+}
+[1697006050.995][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "executionContextId": 2,
+   "executionContextUniqueId": "6495338994150067312.4169965349765608409"
+}
+[1697006050.996][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "timestamp": 4937.798121
+}
+[1697006051.091][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1697006051.458][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "07BB1A4B91ED2B56A86FEDDCCBE0BEAA",
+   "parentFrameId": "D6CFFF463B73D02F119218C1BC35C39A",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 143235,
+         "functionName": "Tw",
+         "lineNumber": 0,
+         "scriptId": "27",
+         "url": "https://www.myntra.com/rj8-zF/T/l/yAqSYk3r1g/Q5O1tpGSmm/QFJ-eUU/QD/o9dyxvXD0B"
+      }, {
+         "columnNumber": 185410,
+         "functionName": "jD",
+         "lineNumber": 0,
+         "scriptId": "27",
+         "url": "https://www.myntra.com/rj8-zF/T/l/yAqSYk3r1g/Q5O1tpGSmm/QFJ-eUU/QD/o9dyxvXD0B"
+      }, {
+         "columnNumber": 180409,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "27",
+         "url": "https://www.myntra.com/rj8-zF/T/l/yAqSYk3r1g/Q5O1tpGSmm/QFJ-eUU/QD/o9dyxvXD0B"
+      } ]
+   }
+}
+[1697006051.458][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=23) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "expression": "1"
+}
+[1697006051.459][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "07BB1A4B91ED2B56A86FEDDCCBE0BEAA"
+}
+[1697006051.467][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "07BB1A4B91ED2B56A86FEDDCCBE0BEAA",
+      "loaderId": "5A9FDCFA967C03CFEF3DC1E9B85AD8C9",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "D6CFFF463B73D02F119218C1BC35C39A",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1697006051.468][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "context": {
+      "auxData": {
+         "frameId": "07BB1A4B91ED2B56A86FEDDCCBE0BEAA",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://www.myntra.com",
+      "uniqueId": "1987504126389454872.885685886079510584"
+   }
+}
+[1697006051.468][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "07BB1A4B91ED2B56A86FEDDCCBE0BEAA"
+}
+[1697006051.677][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "07BB1A4B91ED2B56A86FEDDCCBE0BEAA",
+   "reason": "remove"
+}
+[1697006051.677][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "executionContextId": 3,
+   "executionContextUniqueId": "1987504126389454872.885685886079510584"
+}
+[1697006051.677][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "EC886379B7405244DD7ABD6DCADF007B",
+   "parentFrameId": "D6CFFF463B73D02F119218C1BC35C39A",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 180865,
+         "functionName": "gWC",
+         "lineNumber": 0,
+         "scriptId": "27",
+         "url": "https://www.myntra.com/rj8-zF/T/l/yAqSYk3r1g/Q5O1tpGSmm/QFJ-eUU/QD/o9dyxvXD0B"
+      }, {
+         "columnNumber": 181336,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "27",
+         "url": "https://www.myntra.com/rj8-zF/T/l/yAqSYk3r1g/Q5O1tpGSmm/QFJ-eUU/QD/o9dyxvXD0B"
+      } ]
+   }
+}
+[1697006051.678][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "EC886379B7405244DD7ABD6DCADF007B"
+}
+[1697006051.685][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "EC886379B7405244DD7ABD6DCADF007B",
+      "loaderId": "3D8A1DC88E38388226D169DB56D0ACEA",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "D6CFFF463B73D02F119218C1BC35C39A",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1697006051.685][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "context": {
+      "auxData": {
+         "frameId": "EC886379B7405244DD7ABD6DCADF007B",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 4,
+      "name": "",
+      "origin": "https://www.myntra.com",
+      "uniqueId": "1372568588158104248.-5319271400995096062"
+   }
+}
+[1697006051.685][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "EC886379B7405244DD7ABD6DCADF007B"
+}
+[1697006051.810][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "EC886379B7405244DD7ABD6DCADF007B",
+   "reason": "remove"
+}
+[1697006051.810][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "executionContextId": 4,
+   "executionContextUniqueId": "1372568588158104248.-5319271400995096062"
+}
+[1697006051.907][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "53508C3364510D4C7BCC59A253F05D06",
+   "parentFrameId": "D6CFFF463B73D02F119218C1BC35C39A",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 134307,
+         "functionName": "RnC",
+         "lineNumber": 0,
+         "scriptId": "27",
+         "url": "https://www.myntra.com/rj8-zF/T/l/yAqSYk3r1g/Q5O1tpGSmm/QFJ-eUU/QD/o9dyxvXD0B"
+      }, {
+         "columnNumber": 89354,
+         "functionName": "rnC",
+         "lineNumber": 0,
+         "scriptId": "27",
+         "url": "https://www.myntra.com/rj8-zF/T/l/yAqSYk3r1g/Q5O1tpGSmm/QFJ-eUU/QD/o9dyxvXD0B"
+      }, {
+         "columnNumber": 181623,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "27",
+         "url": "https://www.myntra.com/rj8-zF/T/l/yAqSYk3r1g/Q5O1tpGSmm/QFJ-eUU/QD/o9dyxvXD0B"
+      } ]
+   }
+}
+[1697006051.909][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "53508C3364510D4C7BCC59A253F05D06"
+}
+[1697006051.918][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "53508C3364510D4C7BCC59A253F05D06",
+      "loaderId": "20697F8864E907D9243D3A6F6766B362",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "D6CFFF463B73D02F119218C1BC35C39A",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1697006051.919][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "context": {
+      "auxData": {
+         "frameId": "53508C3364510D4C7BCC59A253F05D06",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 5,
+      "name": "",
+      "origin": "https://www.myntra.com",
+      "uniqueId": "7149521324615947196.6557527181927920001"
+   }
+}
+[1697006051.919][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "53508C3364510D4C7BCC59A253F05D06"
+}
+[1697006051.920][DEBUG]: DevTools WebSocket Event: Page.frameScheduledNavigation (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "delay": 0,
+   "frameId": "53508C3364510D4C7BCC59A253F05D06",
+   "reason": "scriptInitiated",
+   "url": "about:srcdoc"
+}
+[1697006051.920][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "disposition": "currentTab",
+   "frameId": "53508C3364510D4C7BCC59A253F05D06",
+   "reason": "scriptInitiated",
+   "url": "about:srcdoc"
+}
+[1697006051.920][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "53508C3364510D4C7BCC59A253F05D06"
+}
+[1697006051.922][DEBUG]: DevTools WebSocket Event: Page.frameClearedScheduledNavigation (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "53508C3364510D4C7BCC59A253F05D06"
+}
+[1697006051.925][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "C2E1BF3DF3A83651F08388DE638A146A",
+   "parentFrameId": "D6CFFF463B73D02F119218C1BC35C39A",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 136900,
+         "functionName": "OKC",
+         "lineNumber": 0,
+         "scriptId": "27",
+         "url": "https://www.myntra.com/rj8-zF/T/l/yAqSYk3r1g/Q5O1tpGSmm/QFJ-eUU/QD/o9dyxvXD0B"
+      }, {
+         "columnNumber": 138609,
+         "functionName": "RnC",
+         "lineNumber": 0,
+         "scriptId": "27",
+         "url": "https://www.myntra.com/rj8-zF/T/l/yAqSYk3r1g/Q5O1tpGSmm/QFJ-eUU/QD/o9dyxvXD0B"
+      }, {
+         "columnNumber": 89354,
+         "functionName": "rnC",
+         "lineNumber": 0,
+         "scriptId": "27",
+         "url": "https://www.myntra.com/rj8-zF/T/l/yAqSYk3r1g/Q5O1tpGSmm/QFJ-eUU/QD/o9dyxvXD0B"
+      }, {
+         "columnNumber": 181623,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "27",
+         "url": "https://www.myntra.com/rj8-zF/T/l/yAqSYk3r1g/Q5O1tpGSmm/QFJ-eUU/QD/o9dyxvXD0B"
+      } ]
+   }
+}
+[1697006051.927][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "C2E1BF3DF3A83651F08388DE638A146A"
+}
+[1697006051.987][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "context": {
+      "auxData": {
+         "frameId": "C2E1BF3DF3A83651F08388DE638A146A",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 6,
+      "name": "",
+      "origin": "https://www.myntra.com",
+      "uniqueId": "-6178918735673419798.-6077370715349669069"
+   }
+}
+[1697006051.987][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "C2E1BF3DF3A83651F08388DE638A146A"
+}
+[1697006051.992][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "C2E1BF3DF3A83651F08388DE638A146A",
+   "reason": "remove"
+}
+[1697006051.992][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "executionContextId": 6,
+   "executionContextUniqueId": "-6178918735673419798.-6077370715349669069"
+}
+[1697006051.992][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "53508C3364510D4C7BCC59A253F05D06"
+}
+[1697006052.045][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "53508C3364510D4C7BCC59A253F05D06",
+   "reason": "remove"
+}
+[1697006052.045][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "executionContextId": 5,
+   "executionContextUniqueId": "7149521324615947196.6557527181927920001"
+}
+[1697006052.060][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=23) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1697006052.103][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "15177.51",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 401 ()",
+      "timestamp": 1.697006052102102e+12,
+      "url": "https://www.myntra.com/gateway/v1/user/locationContext"
+   }
+}
+[1697006052.103][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=24) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "expression": "1"
+}
+[1697006052.205][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=24) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1697006052.361][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "sessionId": "660952538A03947FDA435D98963D4C08",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "D0E527572CD5FD07D0196EDB75DC961E",
+      "canAccessOpener": false,
+      "targetId": "12764A53AB7FE6F95336A036825796CC",
+      "title": "Service Worker https://www.myntra.com/dsw.js",
+      "type": "service_worker",
+      "url": "https://www.myntra.com/dsw.js"
+   },
+   "waitingForDebugger": false
+}
+[1697006052.361][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=25) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "expression": "1"
+}
+[1697006052.377][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "timestamp": 4939.1656
+}
+[1697006052.377][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=26) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-8307512393320069435.9119319602714930142"
+}
+[1697006052.377][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "D6CFFF463B73D02F119218C1BC35C39A"
+}
+[15069:15069:1011/120412.526797:INFO:CONSOLE(1)] "Uncaught ReferenceError: gtag is not defined", source:  (1)
+[1697006052.529][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "exceptionDetails": {
+      "columnNumber": 0,
+      "exception": {
+         "className": "ReferenceError",
+         "description": "ReferenceError: gtag is not defined\n    at \u003Canonymous>:1:1\n    at https://www.googletagmanager.com/gtm.js?id=GTM-H34B:595:414\n    at https://www.googletagmanager.com/gtm.js?id=GTM-H34B:596:118\n    ...",
+         "objectId": "-6800356059750910692.1.1",
+         "preview": {
+            "description": "ReferenceError: gtag is not defined\n    at \u003Canonymous>:1:1\n    at https://www.googletagmanager.com/gtm.js?id=GTM-H34B:595:414\n    at https://www.googletagmanager.com/gtm.js?id=GTM-H34B:596:118\n    ...",
+            "overflow": false,
+            "properties": [ {
+               "name": "stack",
+               "type": "string",
+               "value": "ReferenceError: gtag is not defined\n    at \u003Canonym…/assets/js/main.acba863ef69e1699458d.js:1:441807)"
+            }, {
+               "name": "message",
+               "type": "string",
+               "value": "gtag is not defined"
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 1,
+      "executionContextId": 1,
+      "lineNumber": 0,
+      "scriptId": "51",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 0,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "51",
+            "url": ""
+         }, {
+            "columnNumber": 413,
+            "functionName": "",
+            "lineNumber": 594,
+            "scriptId": "36",
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-H34B"
+         }, {
+            "columnNumber": 117,
+            "functionName": "",
+            "lineNumber": 595,
+            "scriptId": "36",
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-H34B"
+         }, {
+            "columnNumber": 336,
+            "functionName": "b",
+            "lineNumber": 595,
+            "scriptId": "36",
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-H34B"
+         }, {
+            "columnNumber": 198,
+            "functionName": "Bf",
+            "lineNumber": 135,
+            "scriptId": "36",
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-H34B"
+         }, {
+            "columnNumber": 213,
+            "functionName": "e",
+            "lineNumber": 385,
+            "scriptId": "36",
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-H34B"
+         }, {
+            "columnNumber": 129,
+            "functionName": "",
+            "lineNumber": 79,
+            "scriptId": "36",
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-H34B"
+         }, {
+            "columnNumber": 407,
+            "functionName": "",
+            "lineNumber": 386,
+            "scriptId": "36",
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-H34B"
+         }, {
+            "columnNumber": 147,
+            "functionName": "",
+            "lineNumber": 386,
+            "scriptId": "36",
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-H34B"
+         }, {
+            "columnNumber": 1019,
+            "functionName": "gv",
+            "lineNumber": 387,
+            "scriptId": "36",
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-H34B"
+         }, {
+            "columnNumber": 204,
+            "functionName": "Nv",
+            "lineNumber": 392,
+            "scriptId": "36",
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-H34B"
+         }, {
+            "columnNumber": 271,
+            "functionName": "Yw",
+            "lineNumber": 413,
+            "scriptId": "36",
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-H34B"
+         }, {
+            "columnNumber": 54,
+            "functionName": "ax",
+            "lineNumber": 418,
+            "scriptId": "36",
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-H34B"
+         }, {
+            "columnNumber": 314,
+            "functionName": "b.push",
+            "lineNumber": 422,
+            "scriptId": "36",
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-H34B"
+         }, {
+            "columnNumber": 386,
+            "functionName": "",
+            "lineNumber": 421,
+            "scriptId": "36",
+            "url": "https://www.googletagmanager.com/gtm.js?id=GTM-H34B"
+         }, {
+            "columnNumber": 441806,
+            "functionName": "r",
+            "lineNumber": 0,
+            "scriptId": "15",
+            "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+         } ]
+      },
+      "text": "Uncaught"
+   },
+   "timestamp": 1.697006052526356e+12
+}
+[1697006052.529][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=25) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1697006052.529][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=26) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1697006052.529][INFO]: Done waiting for pending navigations. Status: ok
+[1697006052.529][INFO]: [d432ccc1e9898ccafc0c57710e8cc021] RESPONSE Navigate
+[1697006052.562][INFO]: [d432ccc1e9898ccafc0c57710e8cc021] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//h1[text()=\"MONTREZ\"]"
+}
+[1697006052.562][INFO]: Waiting for pending navigations...
+[1697006052.562][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=27) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "expression": "1"
+}
+[1697006052.566][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=27) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1697006052.566][INFO]: Done waiting for pending navigations. Status: ok
+[1697006052.567][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=28) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006052.576][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=28) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "myntra.com",
+         "gatedAPIFeatures": [  ],
+         "id": "D6CFFF463B73D02F119218C1BC35C39A",
+         "loaderId": "C8224DFEEE8BD4690FE63E61462D8514",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.myntra.com",
+         "url": "https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+      }
+   }
+}
+[1697006052.576][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=29) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006052.585][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=29) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "myntra.com",
+         "gatedAPIFeatures": [  ],
+         "id": "D6CFFF463B73D02F119218C1BC35C39A",
+         "loaderId": "C8224DFEEE8BD4690FE63E61462D8514",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.myntra.com",
+         "url": "https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+      }
+   }
+}
+[1697006052.593][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=30) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "arguments": [  ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "ad0924e3-93dd-4d8f-b5ea-3aedd41c0f6e",
+   "uniqueContextId": "-8307512393320069435.9119319602714930142"
+}
+[1697006052.695][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=30) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "className": "Array",
+      "description": "Array(2)",
+      "objectId": "-6800356059750910692.1.2",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":[{\"element-6066-11e4-a52e-4f735466cecf\":0}]}"
+         }, {
+            "type": "node",
+            "value": {
+               "attributes": {
+                  "class": "pdp-title"
+               },
+               "backendNodeId": 30,
+               "childNodeCount": 1,
+               "localName": "h1",
+               "namespaceURI": "http://www.w3.org/1999/xhtml",
+               "nodeType": 1,
+               "shadowRoot": null
+            }
+         } ]
+      }
+   }
+}
+[1697006052.695][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=31) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "objectGroup": "ad0924e3-93dd-4d8f-b5ea-3aedd41c0f6e"
+}
+[1697006052.696][INFO]: Waiting for pending navigations...
+[1697006052.696][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=32) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "expression": "1"
+}
+[1697006052.830][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=31) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006052.830][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=32) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1697006052.830][INFO]: Done waiting for pending navigations. Status: ok
+[1697006052.830][INFO]: [d432ccc1e9898ccafc0c57710e8cc021] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "C8224DFEEE8BD4690FE63E61462D8514_element_30"
+} ]
+[1697006052.842][INFO]: [d432ccc1e9898ccafc0c57710e8cc021] COMMAND GetElementText {
+   "id": "C8224DFEEE8BD4690FE63E61462D8514_element_30"
+}
+[1697006052.842][INFO]: Waiting for pending navigations...
+[1697006052.842][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=33) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "expression": "1"
+}
+[15069:15069:1011/120412.901636:INFO:CONSOLE(1)] "ServiceWorker registered [object ServiceWorkerRegistration]", source: https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js (1)
+[1697006052.903][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "args": [ {
+      "type": "string",
+      "value": "ServiceWorker registered"
+   }, {
+      "className": "ServiceWorkerRegistration",
+      "description": "ServiceWorkerRegistration",
+      "objectId": "-6800356059750910692.1.3",
+      "preview": {
+         "description": "ServiceWorkerRegistration",
+         "overflow": true,
+         "properties": [ {
+            "name": "installing",
+            "type": "object",
+            "value": "ServiceWorker"
+         }, {
+            "name": "waiting",
+            "subtype": "null",
+            "type": "object",
+            "value": "null"
+         }, {
+            "name": "active",
+            "subtype": "null",
+            "type": "object",
+            "value": "null"
+         }, {
+            "name": "navigationPreload",
+            "type": "object",
+            "value": "NavigationPreloadManager"
+         }, {
+            "name": "scope",
+            "type": "string",
+            "value": "https://www.myntra.com/"
+         } ],
+         "type": "object"
+      },
+      "type": "object"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 443308,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      }, {
+         "columnNumber": 1033,
+         "functionName": "",
+         "lineNumber": 212,
+         "scriptId": "25",
+         "url": "https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+      } ]
+   },
+   "timestamp": 1.6970060529010461e+12,
+   "type": "log"
+}
+[1697006052.960][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=33) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1697006052.960][INFO]: Done waiting for pending navigations. Status: ok
+[1697006052.960][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=34) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006053.019][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=34) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameTree": {
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "myntra.com",
+         "gatedAPIFeatures": [  ],
+         "id": "D6CFFF463B73D02F119218C1BC35C39A",
+         "loaderId": "C8224DFEEE8BD4690FE63E61462D8514",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.myntra.com",
+         "url": "https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+      }
+   }
+}
+[1697006053.019][DEBUG]: DevTools WebSocket Command: DOM.resolveNode (id=35) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "backendNodeId": 30,
+   "objectGroup": "fd9d7524-a860-4bde-b2f6-ddbf7c683132"
+}
+[15069:15069:1011/120413.024943:INFO:CONSOLE(1)] "Uncaught SyntaxError: missing ) after argument list", source: https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy (1)
+[1697006053.026][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "exceptionDetails": {
+      "columnNumber": 39,
+      "exception": {
+         "className": "SyntaxError",
+         "description": "SyntaxError: missing ) after argument list\n    at https://track.omguk.com/e/qs/?action=Content&MID=349836&PID=12185&ref=https%3A//www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-ja...",
+         "objectId": "-6800356059750910692.1.4",
+         "preview": {
+            "description": "SyntaxError: missing ) after argument list\n    at https://track.omguk.com/e/qs/?action=Content&MID=349836&PID=12185&ref=https%3A//www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-ja...",
+            "overflow": false,
+            "properties": [ {
+               "name": "stack",
+               "type": "string",
+               "value": "SyntaxError: missing ) after argument list\n    at …en-white-printed-denim-jacket/18601482/buy:1:1813"
+            }, {
+               "name": "message",
+               "type": "string",
+               "value": "missing ) after argument list"
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 2,
+      "executionContextId": 1,
+      "lineNumber": 0,
+      "scriptId": "66",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 1812,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "61",
+            "url": "https://track.omguk.com/e/qs/?action=Content&MID=349836&PID=12185&ref=https%3A//www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+         } ]
+      },
+      "text": "Uncaught",
+      "url": "https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+   },
+   "timestamp": 1.697006053024556e+12
+}
+[1697006053.069][DEBUG]: DevTools WebSocket Response: DOM.resolveNode (id=35) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "object": {
+      "className": "HTMLHeadingElement",
+      "description": "h1.pdp-title",
+      "objectId": "-6800356059750910692.1.5",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1697006053.069][DEBUG]: DevTools WebSocket Command: Page.getFrameTree (id=36) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006053.081][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "4218E5609B0FCAD4393ACDBAE5C60FE4",
+   "parentFrameId": "D6CFFF463B73D02F119218C1BC35C39A",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 37852,
+         "functionName": "T",
+         "lineNumber": 1,
+         "scriptId": "60",
+         "url": "https://dynamic.criteo.com/js/ld/ld.js?a=34567"
+      }, {
+         "columnNumber": 37155,
+         "functionName": "A",
+         "lineNumber": 1,
+         "scriptId": "60",
+         "url": "https://dynamic.criteo.com/js/ld/ld.js?a=34567"
+      }, {
+         "columnNumber": 35626,
+         "functionName": "o",
+         "lineNumber": 1,
+         "scriptId": "60",
+         "url": "https://dynamic.criteo.com/js/ld/ld.js?a=34567"
+      }, {
+         "columnNumber": 46085,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "60",
+         "url": "https://dynamic.criteo.com/js/ld/ld.js?a=34567"
+      }, {
+         "columnNumber": 35006,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "60",
+         "url": "https://dynamic.criteo.com/js/ld/ld.js?a=34567"
+      }, {
+         "columnNumber": 15070,
+         "functionName": "b.retrieveConsent",
+         "lineNumber": 1,
+         "scriptId": "60",
+         "url": "https://dynamic.criteo.com/js/ld/ld.js?a=34567"
+      }, {
+         "columnNumber": 34943,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "60",
+         "url": "https://dynamic.criteo.com/js/ld/ld.js?a=34567"
+      }, {
+         "columnNumber": 46071,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "60",
+         "url": "https://dynamic.criteo.com/js/ld/ld.js?a=34567"
+      }, {
+         "columnNumber": 15436,
+         "functionName": "k.catchAndStoreException",
+         "lineNumber": 1,
+         "scriptId": "60",
+         "url": "https://dynamic.criteo.com/js/ld/ld.js?a=34567"
+      }, {
+         "columnNumber": 15715,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "60",
+         "url": "https://dynamic.criteo.com/js/ld/ld.js?a=34567"
+      }, {
+         "columnNumber": 441806,
+         "functionName": "r",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      } ]
+   }
+}
+[1697006053.082][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "4218E5609B0FCAD4393ACDBAE5C60FE4"
+}
+[1697006053.138][DEBUG]: DevTools WebSocket Response: Page.getFrameTree (id=36) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameTree": {
+      "childFrames": [ {
+         "frame": {
+            "adFrameStatus": {
+               "adFrameType": "none",
+               "explanations": [  ]
+            },
+            "crossOriginIsolatedContextType": "NotIsolated",
+            "domainAndRegistry": "",
+            "gatedAPIFeatures": [  ],
+            "id": "4218E5609B0FCAD4393ACDBAE5C60FE4",
+            "loaderId": "6F0E64F8D1F54351439DC68EAC1176C6",
+            "mimeType": "text/html",
+            "name": "criteo-syncframe-onetag",
+            "parentId": "D6CFFF463B73D02F119218C1BC35C39A",
+            "secureContextType": "Secure",
+            "securityOrigin": "://",
+            "url": ":"
+         }
+      } ],
+      "frame": {
+         "adFrameStatus": {
+            "adFrameType": "none"
+         },
+         "crossOriginIsolatedContextType": "NotIsolated",
+         "domainAndRegistry": "myntra.com",
+         "gatedAPIFeatures": [  ],
+         "id": "D6CFFF463B73D02F119218C1BC35C39A",
+         "loaderId": "C8224DFEEE8BD4690FE63E61462D8514",
+         "mimeType": "text/html",
+         "secureContextType": "Secure",
+         "securityOrigin": "https://www.myntra.com",
+         "url": "https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+      }
+   }
+}
+[1697006053.143][DEBUG]: DevTools WebSocket Command: Runtime.callFunctionOn (id=37) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "arguments": [ {
+      "objectId": "-6800356059750910692.1.5"
+   } ],
+   "awaitPromise": true,
+   "functionDeclaration": "function(){ return (function() { // Copyright 2012 The Chromium Authors\n// Use of this source code is governed by a BSD-style license that can be\n// found in the LICENSE file.\n\n/**\n * Enum for WebD...",
+   "generateWebDriverValue": true,
+   "objectGroup": "fd9d7524-a860-4bde-b2f6-ddbf7c683132",
+   "uniqueContextId": "-8307512393320069435.9119319602714930142"
+}
+[1697006053.179][DEBUG]: DevTools WebSocket Response: Runtime.callFunctionOn (id=37) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "className": "Array",
+      "description": "Array(1)",
+      "objectId": "-6800356059750910692.1.6",
+      "subtype": "array",
+      "type": "object",
+      "webDriverValue": {
+         "type": "array",
+         "value": [ {
+            "type": "string",
+            "value": "{\"status\":0,\"value\":\"MONTREZ\"}"
+         } ]
+      }
+   }
+}
+[1697006053.179][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=38) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "objectGroup": "fd9d7524-a860-4bde-b2f6-ddbf7c683132"
+}
+[1697006053.179][INFO]: Waiting for pending navigations...
+[1697006053.179][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=39) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "expression": "1"
+}
+[1697006053.191][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=38) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006053.191][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=39) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1697006053.191][INFO]: Done waiting for pending navigations. Status: ok
+[1697006053.191][INFO]: [d432ccc1e9898ccafc0c57710e8cc021] RESPONSE GetElementText "MONTREZ"
+[1697006053.469][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "sessionId": "E57A01D3CAD52DD74CACA088BAE70B12",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "D0E527572CD5FD07D0196EDB75DC961E",
+      "canAccessOpener": false,
+      "targetId": "4218E5609B0FCAD4393ACDBAE5C60FE4",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1697006053.469][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=40) (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1697006053.469][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=41) (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1697006053.470][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=42) (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1697006053.470][DEBUG]: DevTools WebSocket Command: Page.enable (id=43) (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+}
+[1697006053.470][DEBUG]: DevTools WebSocket Command: Page.enable (id=44) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006053.474][DEBUG]: DevTools WebSocket Response: Page.enable (id=44) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006053.478][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "D0E527572CD5FD07D0196EDB75DC961E",
+      "canAccessOpener": false,
+      "targetId": "4218E5609B0FCAD4393ACDBAE5C60FE4",
+      "title": "https://gumi.criteo.com/syncframe?topUrl=www.myntra.com&origin=onetag#{%22bundle%22:{%22origin%22:0,%22value%22:null},%22cw%22:true,%22optout%22:{%22origin%22:0,%22value%22:null},%22origin%22:%22on...",
+      "type": "iframe",
+      "url": "https://gumi.criteo.com/syncframe?topUrl=www.myntra.com&origin=onetag#{%22bundle%22:{%22origin%22:0,%22value%22:null},%22cw%22:true,%22optout%22:{%22origin%22:0,%22value%22:null},%22origin%22:%22on..."
+   }
+}
+[1697006053.478][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "4218E5609B0FCAD4393ACDBAE5C60FE4"
+}
+[1697006053.482][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "4218E5609B0FCAD4393ACDBAE5C60FE4",
+   "reason": "swap"
+}
+[1697006053.489][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=40) (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+   "identifier": "1"
+}
+[1697006053.489][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=41) (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1697006053.489][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=42) (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+}
+[1697006053.489][DEBUG]: DevTools WebSocket Response: Page.enable (id=43) (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+}
+[1697006053.489][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=45) (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+}
+[1697006053.515][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+   "context": {
+      "auxData": {
+         "frameId": "4218E5609B0FCAD4393ACDBAE5C60FE4",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://gumi.criteo.com",
+      "uniqueId": "5304125437533329427.-4009423806285086463"
+   }
+}
+[1697006053.515][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=45) (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+}
+[1697006053.515][DEBUG]: DevTools WebSocket Command: Page.enable (id=46) (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+}
+[1697006053.517][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+   "timestamp": 4940.32209
+}
+[1697006053.517][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+   "frameId": "4218E5609B0FCAD4393ACDBAE5C60FE4"
+}
+[1697006053.517][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+   "timestamp": 4940.322517
+}
+[1697006053.517][DEBUG]: DevTools WebSocket Response: Page.enable (id=46) (session_id=E57A01D3CAD52DD74CACA088BAE70B12) E57A01D3CAD52DD74CACA088BAE70B12 {
+}
+[1697006053.731][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "0716703E14AC06EDFAC64B6C56489A94",
+   "parentFrameId": "D6CFFF463B73D02F119218C1BC35C39A",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 3558,
+         "functionName": "CDV",
+         "lineNumber": 0,
+         "scriptId": "74",
+         "url": "https://cdn.preciso.net/aud/clientjs/2929.js?"
+      }, {
+         "columnNumber": 4231,
+         "functionName": "CIF",
+         "lineNumber": 0,
+         "scriptId": "74",
+         "url": "https://cdn.preciso.net/aud/clientjs/2929.js?"
+      }, {
+         "columnNumber": 2863,
+         "functionName": "Audience",
+         "lineNumber": 0,
+         "scriptId": "74",
+         "url": "https://cdn.preciso.net/aud/clientjs/2929.js?"
+      }, {
+         "columnNumber": 7531,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "74",
+         "url": "https://cdn.preciso.net/aud/clientjs/2929.js?"
+      } ]
+   }
+}
+[1697006053.733][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "0716703E14AC06EDFAC64B6C56489A94"
+}
+[1697006053.745][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "D2144CEF0049DD9094DB95AA1C3CB4F2",
+   "parentFrameId": "D6CFFF463B73D02F119218C1BC35C39A",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 3558,
+         "functionName": "CDV",
+         "lineNumber": 0,
+         "scriptId": "74",
+         "url": "https://cdn.preciso.net/aud/clientjs/2929.js?"
+      }, {
+         "columnNumber": 4231,
+         "functionName": "CIF",
+         "lineNumber": 0,
+         "scriptId": "74",
+         "url": "https://cdn.preciso.net/aud/clientjs/2929.js?"
+      }, {
+         "columnNumber": 3369,
+         "functionName": "Audience",
+         "lineNumber": 0,
+         "scriptId": "74",
+         "url": "https://cdn.preciso.net/aud/clientjs/2929.js?"
+      }, {
+         "columnNumber": 7531,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "74",
+         "url": "https://cdn.preciso.net/aud/clientjs/2929.js?"
+      } ]
+   }
+}
+[1697006053.751][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "D2144CEF0049DD9094DB95AA1C3CB4F2"
+}
+[1697006053.996][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "1F24D787DF578A16FC8639B90551B44E",
+   "parentFrameId": "D6CFFF463B73D02F119218C1BC35C39A",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 758,
+         "functionName": "callDisInternal",
+         "lineNumber": 0,
+         "scriptId": "77",
+         "url": "https://sslwidget.criteo.com/event?a=34567&v=5.18.0&p0=e%3Dce%26m%3D%255BNA%255D&p1=e%3Dexd%26site_type%3Dd&p2=e%3Dvp%26p%3D18601482&p3=e%3Ddis&adce=1&bundle=Bo825l92MjlMSU5WMHoxQlphSzNRSHdzM0VROW1..."
+      }, {
+         "columnNumber": 338,
+         "functionName": "c",
+         "lineNumber": 0,
+         "scriptId": "77",
+         "url": "https://sslwidget.criteo.com/event?a=34567&v=5.18.0&p0=e%3Dce%26m%3D%255BNA%255D&p1=e%3Dexd%26site_type%3Dd&p2=e%3Dvp%26p%3D18601482&p3=e%3Ddis&adce=1&bundle=Bo825l92MjlMSU5WMHoxQlphSzNRSHdzM0VROW1..."
+      }, {
+         "columnNumber": 441806,
+         "functionName": "r",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      } ]
+   }
+}
+[1697006053.997][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "1F24D787DF578A16FC8639B90551B44E"
+}
+[1697006054.005][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "1F24D787DF578A16FC8639B90551B44E",
+      "loaderId": "ED1EA5D60344651781FFFC6332D46B62",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "D6CFFF463B73D02F119218C1BC35C39A",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1697006054.005][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "context": {
+      "auxData": {
+         "frameId": "1F24D787DF578A16FC8639B90551B44E",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 7,
+      "name": "",
+      "origin": "https://www.myntra.com",
+      "uniqueId": "760616188369781273.988449213266658632"
+   }
+}
+[1697006054.005][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "1F24D787DF578A16FC8639B90551B44E"
+}
+[1697006054.008][DEBUG]: DevTools WebSocket Event: Page.documentOpened (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "myntra.com",
+      "gatedAPIFeatures": [  ],
+      "id": "1F24D787DF578A16FC8639B90551B44E",
+      "loaderId": "ED1EA5D60344651781FFFC6332D46B62",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "D6CFFF463B73D02F119218C1BC35C39A",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.myntra.com",
+      "url": "https://www.myntra.com/jackets/montrez/montrez-women-white-printed-denim-jacket/18601482/buy"
+   }
+}
+[1697006054.008][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "A7CCC8B9E6B91AF517417DFD94660B10",
+   "parentFrameId": "1F24D787DF578A16FC8639B90551B44E",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 842,
+         "functionName": "callDisInternal",
+         "lineNumber": 0,
+         "scriptId": "77",
+         "url": "https://sslwidget.criteo.com/event?a=34567&v=5.18.0&p0=e%3Dce%26m%3D%255BNA%255D&p1=e%3Dexd%26site_type%3Dd&p2=e%3Dvp%26p%3D18601482&p3=e%3Ddis&adce=1&bundle=Bo825l92MjlMSU5WMHoxQlphSzNRSHdzM0VROW1..."
+      }, {
+         "columnNumber": 338,
+         "functionName": "c",
+         "lineNumber": 0,
+         "scriptId": "77",
+         "url": "https://sslwidget.criteo.com/event?a=34567&v=5.18.0&p0=e%3Dce%26m%3D%255BNA%255D&p1=e%3Dexd%26site_type%3Dd&p2=e%3Dvp%26p%3D18601482&p3=e%3Ddis&adce=1&bundle=Bo825l92MjlMSU5WMHoxQlphSzNRSHdzM0VROW1..."
+      }, {
+         "columnNumber": 441806,
+         "functionName": "r",
+         "lineNumber": 0,
+         "scriptId": "15",
+         "url": "https://constant.myntassets.com/web/assets/js/main.acba863ef69e1699458d.js"
+      } ]
+   }
+}
+[1697006054.009][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "A7CCC8B9E6B91AF517417DFD94660B10"
+}
+[1697006054.017][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "A7CCC8B9E6B91AF517417DFD94660B10",
+      "loaderId": "0E73FDA63A870896F0A890602A5322A3",
+      "mimeType": "text/html",
+      "name": "cto_sub_ifr_px",
+      "parentId": "1F24D787DF578A16FC8639B90551B44E",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1697006054.017][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "context": {
+      "auxData": {
+         "frameId": "A7CCC8B9E6B91AF517417DFD94660B10",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 8,
+      "name": "",
+      "origin": "https://www.myntra.com",
+      "uniqueId": "-2527696587392104623.4816433493795667019"
+   }
+}
+[1697006054.017][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "A7CCC8B9E6B91AF517417DFD94660B10"
+}
+[1697006054.265][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "6AF5785FA4858F0FE9C63B3953FFCAFC",
+   "parentFrameId": "D6CFFF463B73D02F119218C1BC35C39A",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 1907,
+         "functionName": "m",
+         "lineNumber": 0,
+         "scriptId": "58",
+         "url": "https://tags.creativecdn.com/puHg1KcJ065mNy8GCJ8G.js"
+      }, {
+         "columnNumber": 846,
+         "functionName": "g",
+         "lineNumber": 0,
+         "scriptId": "58",
+         "url": "https://tags.creativecdn.com/puHg1KcJ065mNy8GCJ8G.js"
+      } ]
+   }
+}
+[1697006054.266][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "6AF5785FA4858F0FE9C63B3953FFCAFC"
+}
+[1697006054.280][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "5AD1B00E08CD4B6078BBDA4E123CEB9F",
+   "parentFrameId": "D6CFFF463B73D02F119218C1BC35C39A",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 1907,
+         "functionName": "m",
+         "lineNumber": 0,
+         "scriptId": "58",
+         "url": "https://tags.creativecdn.com/puHg1KcJ065mNy8GCJ8G.js"
+      }, {
+         "columnNumber": 846,
+         "functionName": "g",
+         "lineNumber": 0,
+         "scriptId": "58",
+         "url": "https://tags.creativecdn.com/puHg1KcJ065mNy8GCJ8G.js"
+      } ]
+   }
+}
+[1697006054.280][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "5AD1B00E08CD4B6078BBDA4E123CEB9F"
+}
+[1697006054.488][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "sessionId": "9046BD17494ED58F5E5038AE82AA7442",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "D0E527572CD5FD07D0196EDB75DC961E",
+      "canAccessOpener": false,
+      "targetId": "D2144CEF0049DD9094DB95AA1C3CB4F2",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1697006054.489][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=47) (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1697006054.489][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=48) (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1697006054.490][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=49) (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1697006054.491][DEBUG]: DevTools WebSocket Command: Page.enable (id=50) (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+}
+[1697006054.492][DEBUG]: DevTools WebSocket Command: Page.enable (id=51) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006054.502][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "D0E527572CD5FD07D0196EDB75DC961E",
+      "canAccessOpener": false,
+      "targetId": "D2144CEF0049DD9094DB95AA1C3CB4F2",
+      "title": "https://my.lcmark.net/f.php?f=sync&lr=1&partners=382x46c555d482fcf532dd6e266ca1fbcff2bbaae5528931d78ef71bcde52adc",
+      "type": "iframe",
+      "url": "https://my.lcmark.net/f.php?f=sync&lr=1&partners=382x46c555d482fcf532dd6e266ca1fbcff2bbaae5528931d78ef71bcde52adc"
+   }
+}
+[1697006054.504][DEBUG]: DevTools WebSocket Response: Page.enable (id=51) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006054.504][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "D2144CEF0049DD9094DB95AA1C3CB4F2"
+}
+[1697006054.506][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "D2144CEF0049DD9094DB95AA1C3CB4F2",
+   "reason": "swap"
+}
+[1697006054.515][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=47) (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+   "identifier": "1"
+}
+[1697006054.515][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=48) (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1697006054.515][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=49) (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+}
+[1697006054.515][DEBUG]: DevTools WebSocket Response: Page.enable (id=50) (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+}
+[1697006054.515][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=52) (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+}
+[1697006054.554][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+   "context": {
+      "auxData": {
+         "frameId": "D2144CEF0049DD9094DB95AA1C3CB4F2",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://my.lcmark.net",
+      "uniqueId": "7710689979096126011.-5277403544569032549"
+   }
+}
+[1697006054.554][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=52) (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+}
+[1697006054.554][DEBUG]: DevTools WebSocket Command: Page.enable (id=53) (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+}
+[1697006054.555][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+   "timestamp": 4941.357486
+}
+[1697006054.558][DEBUG]: DevTools WebSocket Response: Page.enable (id=53) (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+}
+[1697006054.570][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "sessionId": "771FFAC78D6B93078909FFC5434B077D",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "D0E527572CD5FD07D0196EDB75DC961E",
+      "canAccessOpener": false,
+      "targetId": "0716703E14AC06EDFAC64B6C56489A94",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1697006054.570][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=54) (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1697006054.571][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=55) (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1697006054.572][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=56) (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1697006054.572][DEBUG]: DevTools WebSocket Command: Page.enable (id=57) (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+}
+[1697006054.573][DEBUG]: DevTools WebSocket Command: Page.enable (id=58) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006054.581][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "sessionId": "D02D3442E339A865A9E24CA1A0F33E7E",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "D0E527572CD5FD07D0196EDB75DC961E",
+      "canAccessOpener": false,
+      "targetId": "6AF5785FA4858F0FE9C63B3953FFCAFC",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1697006054.581][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=59) (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1697006054.582][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=60) (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1697006054.582][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=61) (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1697006054.583][DEBUG]: DevTools WebSocket Command: Page.enable (id=62) (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+}
+[1697006054.583][DEBUG]: DevTools WebSocket Command: Page.enable (id=63) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006054.594][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "sessionId": "6F76CAEE96238119DE4BB7CF369610C8",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "D0E527572CD5FD07D0196EDB75DC961E",
+      "canAccessOpener": false,
+      "targetId": "5AD1B00E08CD4B6078BBDA4E123CEB9F",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1697006054.594][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=64) (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1697006054.596][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=65) (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1697006054.596][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=66) (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1697006054.596][DEBUG]: DevTools WebSocket Command: Page.enable (id=67) (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+}
+[1697006054.597][DEBUG]: DevTools WebSocket Command: Page.enable (id=68) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006054.606][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "D0E527572CD5FD07D0196EDB75DC961E",
+      "canAccessOpener": false,
+      "targetId": "6AF5785FA4858F0FE9C63B3953FFCAFC",
+      "title": "https://asia.creativecdn.com/fledge-igmembership?ntk=aKCPubaxqGy8hScHbw5vktjPwZRr1X7EFcIzFAhBJeGkvAijfU7GzRT1LTZEdG8mg5PEgDfre9m569RPViqGOw",
+      "type": "iframe",
+      "url": "https://asia.creativecdn.com/fledge-igmembership?ntk=aKCPubaxqGy8hScHbw5vktjPwZRr1X7EFcIzFAhBJeGkvAijfU7GzRT1LTZEdG8mg5PEgDfre9m569RPViqGOw"
+   }
+}
+[1697006054.614][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "D0E527572CD5FD07D0196EDB75DC961E",
+      "canAccessOpener": false,
+      "targetId": "0716703E14AC06EDFAC64B6C56489A94",
+      "title": "https://ck.2trk.info/rtb/google/cookiematch.aspx?id=preciso_srl&cok15=poo_mt_in|ami_mt_in|pec_mt_in&cnty15=IND&ProgramName=MYNTRA_IN&AudienceId=2929&CampaignId=62865,62927,63824&Referrer=https%3A%2...",
+      "type": "iframe",
+      "url": "https://ck.2trk.info/rtb/google/cookiematch.aspx?id=preciso_srl&cok15=poo_mt_in|ami_mt_in|pec_mt_in&cnty15=IND&ProgramName=MYNTRA_IN&AudienceId=2929&CampaignId=62865,62927,63824&Referrer=https%3A%2..."
+   }
+}
+[1697006054.615][DEBUG]: DevTools WebSocket Response: Page.enable (id=58) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006054.617][DEBUG]: DevTools WebSocket Response: Page.enable (id=63) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006054.618][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=54) (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+   "identifier": "1"
+}
+[1697006054.621][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=55) (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1697006054.622][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=56) (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+}
+[1697006054.623][DEBUG]: DevTools WebSocket Response: Page.enable (id=57) (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+}
+[1697006054.628][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "D0E527572CD5FD07D0196EDB75DC961E",
+      "canAccessOpener": false,
+      "targetId": "5AD1B00E08CD4B6078BBDA4E123CEB9F",
+      "title": "https://asia.creativecdn.com/topics-membership?ntk=LjvY7HAGtML9wpbOK1MKTsv37im0-nCFTE1bVX1KmutibagKTn2WBWCigHXA0EQkZkjPYVuaDdJo1DgIvg-QBw",
+      "type": "iframe",
+      "url": "https://asia.creativecdn.com/topics-membership?ntk=LjvY7HAGtML9wpbOK1MKTsv37im0-nCFTE1bVX1KmutibagKTn2WBWCigHXA0EQkZkjPYVuaDdJo1DgIvg-QBw"
+   }
+}
+[1697006054.629][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+   "timestamp": 4941.41674
+}
+[1697006054.630][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+   "frameId": "0716703E14AC06EDFAC64B6C56489A94"
+}
+[1697006054.630][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+   "timestamp": 4941.417346
+}
+[1697006054.634][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "6AF5785FA4858F0FE9C63B3953FFCAFC"
+}
+[1697006054.634][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "6AF5785FA4858F0FE9C63B3953FFCAFC",
+   "reason": "swap"
+}
+[1697006054.636][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "0716703E14AC06EDFAC64B6C56489A94"
+}
+[1697006054.637][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "0716703E14AC06EDFAC64B6C56489A94",
+   "reason": "swap"
+}
+[1697006054.638][DEBUG]: DevTools WebSocket Response: Page.enable (id=68) (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+}
+[1697006054.638][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=59) (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+   "identifier": "1"
+}
+[1697006054.639][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=60) (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1697006054.639][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=61) (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+}
+[1697006054.639][DEBUG]: DevTools WebSocket Response: Page.enable (id=62) (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+}
+[1697006054.639][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "5AD1B00E08CD4B6078BBDA4E123CEB9F"
+}
+[1697006054.642][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "5AD1B00E08CD4B6078BBDA4E123CEB9F",
+   "reason": "swap"
+}
+[1697006054.650][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=64) (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+   "identifier": "1"
+}
+[1697006054.651][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=65) (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1697006054.651][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=66) (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+}
+[1697006054.651][DEBUG]: DevTools WebSocket Response: Page.enable (id=67) (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+}
+[1697006054.651][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=69) (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+}
+[1697006054.655][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+   "timestamp": 4941.460068
+}
+[1697006054.656][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+   "frameId": "6AF5785FA4858F0FE9C63B3953FFCAFC"
+}
+[1697006054.656][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+   "timestamp": 4941.460675
+}
+[1697006054.659][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+   "timestamp": 4941.463998
+}
+[1697006054.659][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+   "frameId": "5AD1B00E08CD4B6078BBDA4E123CEB9F"
+}
+[1697006054.659][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+   "timestamp": 4941.464359
+}
+[1697006054.661][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+   "context": {
+      "auxData": {
+         "frameId": "5AD1B00E08CD4B6078BBDA4E123CEB9F",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://asia.creativecdn.com",
+      "uniqueId": "-6271824739691650367.1695256415971780618"
+   }
+}
+[1697006054.661][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=69) (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+}
+[1697006054.661][DEBUG]: DevTools WebSocket Command: Page.enable (id=70) (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+}
+[1697006054.662][DEBUG]: DevTools WebSocket Response: Page.enable (id=70) (session_id=6F76CAEE96238119DE4BB7CF369610C8) 6F76CAEE96238119DE4BB7CF369610C8 {
+}
+[1697006054.662][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=71) (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+}
+[1697006054.664][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+   "context": {
+      "auxData": {
+         "frameId": "6AF5785FA4858F0FE9C63B3953FFCAFC",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://asia.creativecdn.com",
+      "uniqueId": "-5602263517699388860.7350601957860482449"
+   }
+}
+[1697006054.664][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=71) (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+}
+[1697006054.664][DEBUG]: DevTools WebSocket Command: Page.enable (id=72) (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+}
+[1697006054.665][DEBUG]: DevTools WebSocket Response: Page.enable (id=72) (session_id=D02D3442E339A865A9E24CA1A0F33E7E) D02D3442E339A865A9E24CA1A0F33E7E {
+}
+[1697006054.666][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=73) (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+}
+[1697006054.667][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+   "context": {
+      "auxData": {
+         "frameId": "0716703E14AC06EDFAC64B6C56489A94",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://ck.2trk.info",
+      "uniqueId": "5800027334849624413.-5053968254363676140"
+   }
+}
+[1697006054.667][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=73) (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+}
+[1697006054.667][DEBUG]: DevTools WebSocket Command: Page.enable (id=74) (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+}
+[1697006054.669][DEBUG]: DevTools WebSocket Response: Page.enable (id=74) (session_id=771FFAC78D6B93078909FFC5434B077D) 771FFAC78D6B93078909FFC5434B077D {
+}
+[1697006055.525][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+   "timestamp": 4942.328468
+}
+[1697006055.525][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=9046BD17494ED58F5E5038AE82AA7442) 9046BD17494ED58F5E5038AE82AA7442 {
+   "frameId": "D2144CEF0049DD9094DB95AA1C3CB4F2"
+}
+[15069:15069:1011/120428.195081:WARNING:controller_impl.cc(1188)] Background download complete, client: 6, completion type: 0, file size:5085
+[15069:15069:1011/120428.755407:WARNING:controller_impl.cc(1188)] Background download complete, client: 6, completion type: 0, file size:265059
+[15069:15069:1011/120430.418964:WARNING:controller_impl.cc(1188)] Background download complete, client: 6, completion type: 0, file size:883094
+[15069:15069:1011/120431.886918:WARNING:controller_impl.cc(1188)] Background download complete, client: 6, completion type: 0, file size:45103
+[1697006083.087][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "frameId": "4218E5609B0FCAD4393ACDBAE5C60FE4",
+   "reason": "remove"
+}
+[1697006083.087][DEBUG]: DevTools WebSocket Event: Target.detachedFromTarget (session_id=DEDCE58088543D2B86B2615A2764EEE6) D6CFFF463B73D02F119218C1BC35C39A {
+   "sessionId": "E57A01D3CAD52DD74CACA088BAE70B12",
+   "targetId": "4218E5609B0FCAD4393ACDBAE5C60FE4"
+}
+[1697007424.241][INFO]: [d432ccc1e9898ccafc0c57710e8cc021] COMMAND Quit {
+}
+[1697007424.295][INFO]: [d432ccc1e9898ccafc0c57710e8cc021] RESPONSE Quit
+[1697007424.295][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1697007424.295][DEBUG]: Log type 'browser' lost 3 entries on destruction
